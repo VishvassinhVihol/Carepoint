@@ -37,7 +37,7 @@ import { AppContext } from '../context/AppContext'
                         <li className='py-1'>CONTACT</li>
                         <hr className='hidden border-none outline-none h-0.5 w-3/5 bg-primary m-auto' />
                     </NavLink>
-                    <button onClick={() => window.open(import.meta.env.VITE_ADMIN_URL + '/api/admin', '_blank')} className='text-xs border rounded-full px-4 border-gray-300 cursor-pointer'>Admin Pannel</button>
+                    <button onClick={() => window.open(import.meta.env.VITE_ADMIN_URL, '_blank')} className='text-xs border rounded-full px-4 border-gray-300 cursor-pointer'>Admin Pannel</button>
                 </ul>
                 <div className='flex items-center gap-4 ms-auto relative'>
                     {
@@ -75,7 +75,7 @@ import { AppContext } from '../context/AppContext'
                                 to='/about'>ABOUT</NavLink>
                             <NavLink onClick={() => { setClick(false); scrollTo(0, 0) }} className={({ isActive }) => isActive ? 'py-2 px-5 text-white bg-primary rounded-lg font-medium' : ''}
                                 to='/contact'>CONTACT</NavLink>
-                                <button onClick={() => window.open(import.meta.env.VITE_ADMIN_URL + '/api/admin', '_blank')} className='text-xs border rounded-full px-4 border-gray-300 cursor-pointer'>Admin Pannel</button>
+                                <button onClick={() => window.open(import.meta.env.VITE_ADMIN_URL, '_blank')} className='text-xs border rounded-full px-4 border-gray-300 cursor-pointer'>Admin Pannel</button>
                            
                         </ul>
                     </div>
