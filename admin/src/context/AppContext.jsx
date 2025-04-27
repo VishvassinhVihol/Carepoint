@@ -1,6 +1,4 @@
 import React, { createContext } from 'react'
-import App from '../../../frontend/src/App'
-
 export const AppContext = createContext()
 
 const AppContextProvider = ({children}) => {
