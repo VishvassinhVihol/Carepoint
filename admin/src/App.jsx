@@ -25,7 +25,7 @@ const App = () => {
       <ToastContainer />
       <div className='flex items-start'>
         <Sidebar/>
-        <Routes path='/' element={<></>}>
+        <Routes >
           {/* admin routes */}
           <Route path='/admin-dashboard' element={<Dashboard/>}/>
           <Route path='/all-appointments' element={<Appointments/>}/>
