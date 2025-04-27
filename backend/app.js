@@ -8,6 +8,8 @@ const adminRouter = require('./routes/adminRoutes')
 const doctorRouter = require('./routes/doctorRoutes')
 const userRouter = require('./routes/userRotes')
 const cors = require('cors')
+const path = require('path');
+
 app.use(cors())
 
 connectToMongo().then(() => console.log('connected to mongoose')).catch((e) => console.log(e))
@@ -28,3 +30,8 @@ app.use('/api/user',userRouter)
 app.get('/',(req,res) => {
     res.send('all set')
 })
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "path-to-your-index.html"));
+  });
+  
